@@ -25,8 +25,6 @@ kubernetes/
 - 75/25 traffic splitting between versions
 - Advanced NGINX Ingress configuration
 - Independent scaling of environments
-- Automated health checks
-- Instant rollback capability
 
 ## 🚀 Quick Start
 
@@ -72,7 +70,6 @@ kubectl get ingress
 4. Monitor application health
 
 ## 🔗 Related Links
-- [Main Project Documentation](../README.md)
 - [Infrastructure Automation Project](../terraform/README.md)
 
 ## 📝 License
