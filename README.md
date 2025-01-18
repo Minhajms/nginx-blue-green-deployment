@@ -8,7 +8,7 @@ This repository contains a collection of advanced DevOps projects demonstrating 
 
 ## 📂 Projects
 
-### [Project 1: Blue-Green Deployment with Traffic Splitting](kubernetes/README.md)
+### [Project 1: Blue-Green Deployment with Traffic Splitting]([kubernetes/README.md](https://github.com/Minhajms/nginx-blue-green-deployment/tree/master/k8s-blue-green/kubernetes))
 Implementation of blue-green deployment pattern in Kubernetes with sophisticated traffic splitting using NGINX Ingress Controller.
 
 **Key Features:**
