@@ -8,7 +8,7 @@ This repository contains a collection of advanced DevOps projects demonstrating 
 
 ## 📂 Projects
 
-### [Project 1: Blue-Green Deployment with Traffic Splitting]([kubernetes/README.md](k8s-blue-green/kubernetes/README.md)
+### [Project 1: Blue-Green Deployment with Traffic Splitting](k8s-blue-green/kubernetes/README.md)
 Implementation of blue-green deployment pattern in Kubernetes with sophisticated traffic splitting using NGINX Ingress Controller.
 
 **Key Features:**
@@ -18,7 +18,7 @@ Implementation of blue-green deployment pattern in Kubernetes with sophisticated
 - Automated health checks
 - Instant rollback capability
 
-### [Project 2: Infrastructure Automation with Terraform](terraform/README.md)
+### [Project 2: Infrastructure Automation with Terraform](k8s-blue-green/terraform/README.md)
 Automated Kubernetes infrastructure deployment using Terraform with modular architecture and dynamic resource management.
 
 **Key Features:**
@@ -54,8 +54,8 @@ k8s-blue-green/
 
 ## 📚 Documentation
 Each project has its own detailed documentation:
-- [Blue-Green Deployment Documentation](kubernetes/README.md)
-- [Terraform Infrastructure Documentation](terraform/README.md)
+- [Blue-Green Deployment Documentation](k8s-blue-green/kubernetes/README.md)
+- [Terraform Infrastructure Documentation](k8s-blue-green/terraform/README.md)
 
 ## 🤝 Contributing
 Contributions are welcome! Please check individual project directories for specific contribution guidelines.
