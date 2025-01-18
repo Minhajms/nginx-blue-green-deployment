@@ -73,7 +73,6 @@ terraform output
 4. Verify deployment
 
 ## 🔗 Related Links
-- [Main Project Documentation](../README.md)
 - [Blue-Green Deployment Project](../kubernetes/README.md)
 
 ## 📝 License
