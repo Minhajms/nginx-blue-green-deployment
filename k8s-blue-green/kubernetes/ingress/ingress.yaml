@@ -1,0 +1,36 @@
+# Primary Ingress (Blue App)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: blue-app-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: blue-app-service
+            port:
+              number: 8080
+---
+# Canary Ingress (Green App)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: green-app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "25"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: green-app-service
+            port:
+              number: 8081
