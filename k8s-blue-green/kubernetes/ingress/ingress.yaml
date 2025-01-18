@@ -2,8 +2,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: blue-app-ingress
+  name: blue-green-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:
@@ -19,11 +22,12 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: green-app-ingress
+  name: green-canary-ingress
   annotations:
     nginx.ingress.kubernetes.io/canary: "true"
-    nginx.ingress.kubernetes.io/canary-weight: "25"
+    nginx.ingress.kubernetes.io/canary-weight: "25" # 25% traffic to green app
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:

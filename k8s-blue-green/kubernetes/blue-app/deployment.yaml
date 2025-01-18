@@ -13,10 +13,10 @@ spec:
         app: blue-app
     spec:
       containers:
-      - name: http-echo
+      - name: blue-app
         image: hashicorp/http-echo
         args:
-        - "-listen=:8080"
-        - "-text=I am blue"
+        - -listen=:8080
+        - -text="I am blue"
         ports:
         - containerPort: 8080
